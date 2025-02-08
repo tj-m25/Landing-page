@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
@@ -14,7 +18,44 @@ header {
     color: #000000;
 
 }
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    margin: 20px;
+}
 
+.line {
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+nav {
+    display: none;         
+}
+
+nav.active {
+    display: block; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -29,6 +70,25 @@ nav ul li {
 nav ul li a {
     color: #000000;
     text-decoration: none;
+}
+
+header input[type="search"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
 }
 
 .promo {
@@ -176,6 +236,18 @@ footer {
     margin-top: 20px;
 }
 
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: #d6d6d6;
+    color: #000000;
+    list-style: none;
+    margin: 0;
+
+}
 footer a {
     color: rgb(0, 0, 0);
     text-decoration: none;
